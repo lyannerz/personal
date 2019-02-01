@@ -3,7 +3,7 @@
     <div class="content-modal">
       <button class="close hover" v-on:click="onClose">x</button>
       <p class="p">Working with Professor David Lee</p>
-      <a class="tech-link hover marginBottom" href="https://www.figma.com/file/0b9MheMHBV8CZcrqwWpCpXlQ/causeway-stuff?node-id=1%3A1254" target="_blank">Causeway</a>
+      <a class="tech-link hover marginBottom" href="https://www.figma.com/file/0b9MheMHBV8CZcrqwWpCpXlQ/causeway-stuff?node-id=0%3A1" target="_blank">Causeway</a>
       <img class="smile marginBottom" :src="SmileImg" alt="tech for good" />
       <div class="in-progress">
         In Progress

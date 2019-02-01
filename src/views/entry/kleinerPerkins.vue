@@ -77,14 +77,14 @@
           </h4>
           <p class="p paddingTop paddingBottom">
             According to the user research, Nextdoor has opportunity for improvement in providing more
-            in-person experiences. Therefore, the Nextdoor's challenge is to being able to leverage their
+            in-person experiences. Therefore, Nextdoor's challenge is to being able to leverage their
             mission of building communities to promote in-person interactions.
           </p>
           <h4 class="h4 paddingTop">
             Proposal
           </h4>
           <p class="p paddingTop paddingBottom">
-            To actively promote in-person events and community bondings within Nextdoor, For this specific
+            To actively promote in-person events and community bondings within Nextdoor, for this specific
             challenge, I specifically will be talking about adding a "community event" for each neighborhood.
           </p>
           <h4 class="h4 paddingTop">
@@ -150,7 +150,7 @@
             Reflection
           </h4>
           <p class="p paddingTop paddingBottom">
-            I wanted to integrate an introduction poll for two reasons. First reasons was to smoothly introduce
+            I wanted to integrate an introduction poll for two reasons. First reason was to smoothly introduce
             new ideas (in this case, the "community event") to users. The poll hints the idea at the users, allowing
             the "community event" to be introduced without a surprise or confusion. Second reason was to collect
             relevant data to better execute the idea of creating a "community event" for the neighborhoods.
@@ -164,7 +164,7 @@
           </p>
           <p class="p paddingTop paddingBottom">
             Nextdoor has a unique advantage of having a product that is centered around communities and neighborhood.
-            WIth this background in mind, I believe that Nextdoor should be able to use this advantage to smoothly
+            With this background in mind, I believe that Nextdoor should be able to use this advantage to smoothly
             introduce user-friendly features that actively promote community bonding.
           </p>
           <div class="a-wrapper p paddingTop paddingBottom">

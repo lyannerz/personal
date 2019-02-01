@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && cd dist && rsync -va --delete-after * ../ && cd .. && cp index.html 404.html && rm -rf dist",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

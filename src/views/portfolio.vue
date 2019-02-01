@@ -12,7 +12,7 @@
               <router-link
                 class="nextdoor hover hover3"
                 tag="a"
-                to="/kleinerperkins"
+                to="/portfolio/kleinerperkins"
               >
                 Enter
               </router-link>
@@ -33,7 +33,7 @@
             </div>
             <div class="item">
               <h4 class="item-header">Causeway</h4>
-              <a class="causeway hover hover3" href="https://www.figma.com/file/0b9MheMHBV8CZcrqwWpCpXlQ/causeway-stuff?node-id=1%3A1254" target="_blank">Figma</a>
+              <a class="causeway hover hover3" href="https://www.figma.com/file/0b9MheMHBV8CZcrqwWpCpXlQ/causeway-stuff?node-id=0%3A1" target="_blank">Figma</a>
             </div>
             <div class="item">
               <h4 class="item-header">Spotify</h4>
