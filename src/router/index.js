@@ -19,7 +19,7 @@ export default new Router({
       component: portfolio,
     },
     {
-      path: '/portfolio/kleinerperkins',
+      path: '/kleinerperkins',
       component: kleinerPerkins,
     },
     {

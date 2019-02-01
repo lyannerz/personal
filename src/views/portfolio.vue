@@ -12,7 +12,7 @@
               <router-link
                 class="nextdoor hover hover3"
                 tag="a"
-                to="/portfolio/kleinerperkins"
+                to="/kleinerperkins"
               >
                 Enter
               </router-link>
