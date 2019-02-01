@@ -5,7 +5,7 @@
         <div class="content">
           <h1 class="header marginBottom">Hi! My name is Lyanna.</h1>
           <p class="message marginBottom large">
-            {{'Current a student at the University of California, '}}
+            {{'Currently a student at the University of California, '}}
             <a class="special message hover hover3" v-on:click="changeModal(SPECIAL_ENTRIES.santacruz)">
               Santa Cruz
             </a>
