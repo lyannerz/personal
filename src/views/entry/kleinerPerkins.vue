@@ -218,6 +218,11 @@ export default {
       eventImg,
     };
   },
+  methods: {
+    track() {
+      this.$ga.page('/portfolio/kleinerperkins');
+    },
+  },
 }
 </script>
 

@@ -82,6 +82,9 @@ export default {
       this.currentEntry = null;
       history.pushState(null, null, ' ');
     },
+    track() {
+      this.$ga.page('/');
+    },
   },
   mounted() {
     this.show = true;

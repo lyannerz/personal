@@ -65,6 +65,11 @@ export default {
   mounted() {
     this.show = true;
   },
+  methods: {
+    track() {
+      this.$ga.page('/portfolio');
+    },
+  },
 }
 </script>
 
