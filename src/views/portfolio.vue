@@ -64,6 +64,7 @@ export default {
   },
   mounted() {
     this.show = true;
+    this.track();
   },
   methods: {
     track() {

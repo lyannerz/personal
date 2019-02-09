@@ -223,6 +223,9 @@ export default {
       this.$ga.page('/portfolio/kleinerperkins');
     },
   },
+  mounted() {
+    this.track();
+  },
 }
 </script>
 

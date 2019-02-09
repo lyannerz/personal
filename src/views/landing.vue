@@ -88,6 +88,7 @@ export default {
   },
   mounted() {
     this.show = true;
+    this.track();
 
     if (this.currentEntry) {
       this.isModalOpen = true;
