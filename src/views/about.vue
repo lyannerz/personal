@@ -5,13 +5,12 @@
         <div class="content paddingBottom">
           <h1 class="header marginBottom">About me</h1>
           <p class="message marginBottom large">
-            {{'I am passionate about product design and creating satisfying user experiences.'}}
-            <br />
+            {{'I am passionate about product design and creating satisfying user experiences. '}}
             {{'In my free time, I enjoy scrolling through dribbble, playing guitar, doodling, hanging out with '}}
             <span class="strikethrough">dogs</span>
             {{'my friends, playing badminton, and photographing memories.'}}
           </p>
-          <div class="grid marginBottom large">
+          <div class="grid marginBottom small">
             <img
               class="item-img hover"
               :src="item.imgSrc"
@@ -23,9 +22,9 @@
           </div>
         </div>
         <div class="contact-me-wrapper">
-          <a class="contact-me hover marginBottom large" href="mailto:lyannaho0@gmail.com" target="_top">
-            Contact Me
-          </a>
+          <router-link class="contact-me hover marginBottom large" to="/portfolio">
+            Go to Portfolio
+          </router-link>
         </div>
       </div>
       <transition name="fadeNoDelay">
@@ -104,7 +103,7 @@ export default {
 <style scoped>
 .content {
   padding-top: 100px;
-  width: 90%;
+  width: 70%;
 }
 
 .header {
@@ -144,7 +143,7 @@ export default {
 .contact-me {
   background-color: var(--light-blue-color);
   border-radius: 50px;
-  padding: 10px 25px;
+  padding: 14px 28px;
 }
 
 .modal-img {

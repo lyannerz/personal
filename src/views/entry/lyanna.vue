@@ -3,7 +3,7 @@
     <div class="content-modal">
       <button class="close hover" v-on:click="onClose">x</button>
       <a href="https://www.figma.com/file/RLVOfYzJOfvNrjnbpbxlIsMc/Personal?node-id=0%3A1" target="_blank">
-        <img class="wave hover" :src="PersonalImg" alt="personal figma" />
+        <img class="wave hover" src="/personal.png" alt="personal figma" />
       </a>
     </div>
     <div class="textAlign paddingBottom">
@@ -15,15 +15,7 @@
 </template>
 
 <script>
-import PersonalImg from '@/assets/personal.png';
-
 export default {
-  data() {
-    return {
-      // assets
-      PersonalImg,
-    };
-  },
   props: {
     onClose: Function,
   },
@@ -33,7 +25,7 @@ export default {
 <style scoped>
 .content-modal {
   height: auto;
-  padding: 70px 100px 40px 100px;
+  padding: 70px 50px 40px 50px;
   text-align: center;
   width: min-content;
 }
@@ -41,7 +33,7 @@ export default {
 .wave {
   height: auto;
   object-fit: cover;
-  width: 450px;
+  width: 900px;
   vertical-align: top;
 }
 
@@ -51,8 +43,8 @@ export default {
 }
 
 .close {
-  background-color: var(--black-color);
-  color: var(--white-color);
+  background-color: var(--light-blue-color);
+  color: var(--black-color);
   border-top-right-radius: 10px;
   cursor: pointer;
   font-family: 'Nunito', sans-serif;
@@ -64,6 +56,7 @@ export default {
   right: 0;
   top: 0;
   width: 30px;
+  z-index: 1;
 }
 
 .textAlign {
@@ -72,8 +65,8 @@ export default {
 
 .link {
   border-radius: 50px;
-  background-color: var(--black-color);
-  color: var(--white-color);
+  background-color: var(--light-blue-color);
+  color: var(--black-color);
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
@@ -86,7 +79,7 @@ export default {
   }
 
   .wave {
-    width: 400px;
+    width: 600px;
   }
 }
 
@@ -96,7 +89,13 @@ export default {
   }
 
   .wave {
-    width: 300px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .wave {
+    width: 360px;
   }
 }
 </style>

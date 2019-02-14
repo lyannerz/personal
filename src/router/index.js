@@ -4,7 +4,9 @@ import Router from 'vue-router';
 import about from '@/views/about';
 import landing from '@/views/landing';
 import portfolio from '@/views/portfolio';
+
 import kleinerPerkins from '@/views/entry/kleinerPerkins';
+import vinegarEntry from '@/views/entry/vinegarEntry';
 
 Vue.use(Router);
 export default new Router({
@@ -21,6 +23,10 @@ export default new Router({
     {
       path: '/portfolio/kleinerperkins',
       component: kleinerPerkins,
+    },
+    {
+      path: '/portfolio/vinegar',
+      component: vinegarEntry,
     },
     {
       path: '/about',

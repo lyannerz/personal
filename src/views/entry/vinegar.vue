@@ -2,14 +2,14 @@
   <div>
     <div class="content-modal">
       <button class="close hover" v-on:click="onClose">x</button>
-      <a href="https://www.figma.com/file/MjWyfxSPRzoWxUWEcDUIu22e/cruzhacks?node-id=0%3A1" target="_blank">
+      <router-link to="/portfolio/vinegar">
         <img class="wave" :src="WaveImg" alt="vinegar" />
-      </a>
+      </router-link>
     </div>
     <div class="textAlign paddingBottom">
-      <a class="link hover" href="https://www.figma.com/file/MjWyfxSPRzoWxUWEcDUIu22e/cruzhacks?node-id=0%3A1" target="_blank">
-        Open in Figma
-      </a>
+      <router-link class="link" to="/portfolio/vinegar">
+        View Portfolio
+      </router-link>
     </div>
   </div>
 </template>
@@ -84,6 +84,13 @@ export default {
   font-size: 18px;
   font-weight: 500;
   padding: 10px 25px;
+  transition: background-color var(--transition-duration) var(--transition-curve);
+  will-change: background-color, opacity;
+}
+
+.link:hover {
+  background-color: #F88379;
+  opacity: 1;
 }
 
 @media (max-width: 880px) {

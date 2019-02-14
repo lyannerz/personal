@@ -192,6 +192,23 @@ input:focus {
   transform: scaleY(1);
 }
 
+.hover4::before {
+  background-color: var(--black-color);
+  border-radius: 50px;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity var(--transition-duration) var(--transition-curve);
+  width: 100%;
+}
+
+.hover4:hover::before {
+  opacity: 0.25;
+}
+
 /* margin */
 .marginTop {
   margin-top: 40px;

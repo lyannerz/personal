@@ -8,6 +8,16 @@
           </h1>
           <div class="grid first">
             <div class="item">
+              <h4 class="item-header">Vinegar</h4>
+              <router-link
+                class="vinegar hover hover3"
+                tag="a"
+                to="/portfolio/vinegar"
+              >
+                Enter
+              </router-link>
+            </div>
+            <div class="item">
               <h4 class="item-header">Nextdoor Redesign</h4>
               <router-link
                 class="nextdoor hover hover3"
@@ -18,15 +28,11 @@
               </router-link>
             </div>
           </div>
-          <h3 class="header-3 marginTop large">Meanwhile,</h3>
+          <h3 class="header-3 marginTop large">Also,</h3>
           <p class="message marginBottom large">
             check out my fun projects and illustrations!
           </p>
           <div class="grid">
-            <div class="item">
-              <h4 class="item-header">Vinegar</h4>
-              <a class="vinegar hover hover3" href="https://www.figma.com/file/MjWyfxSPRzoWxUWEcDUIu22e/cruzhacks?node-id=0%3A1" target="_blank">Figma</a>
-            </div>
             <div class="item">
               <h4 class="item-header">Personal</h4>
               <a class="hover hover3" href="https://www.figma.com/file/RLVOfYzJOfvNrjnbpbxlIsMc/Personal?node-id=0%3A1" target="_blank">Figma</a>
@@ -116,11 +122,12 @@ export default {
 }
 
 .grid.first {
-  width: 100%;
+  justify-content: unset;
 }
 
 .grid.first .item {
-  width: 33.33%;
+  min-width: 25%;
+  width: fit-content;
 }
 
 .item {
@@ -137,6 +144,11 @@ export default {
   font-size: 16px;
 }
 
+.causeway::before {
+  background-color: #728ffd !important;
+  opacity: 0.35;
+}
+
 .nextdoor::before {
   background-color: #00B246 !important;
   opacity: 0.25;
@@ -144,7 +156,7 @@ export default {
 
 .vinegar::before {
   background-color: #F88379 !important;
-  opacity: 0.45;
+  opacity: 0.6;
 }
 
 .spotify::before {
