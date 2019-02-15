@@ -26,22 +26,20 @@
           <h4 class="h4 marginTop paddingBottom small">
             Inspiration
           </h4>
-          <div class="float marginTop small">
-            <div>
-              <p class="p">
-                Starting off as a random idea for Cruzhacks (a hackathon
-                hosted in Santa Cruz, California), I wanted to design a user-friendly
-                and modern application to entice our targeted college
-                student demographic.
-              </p>
-              <p class="p marginTop">
-                The name of our project derived from a nearby chip bag flavored "salt and vinegar".
-                Sticking with the name jokingly, we worked on the project thinking a new name would come
-                up in the process. However, we concluded our product is a silly idea and this name is uniquely
-                humorous.
-              </p>
-            </div>
-            <img class="inspirationImg" :src="inspirationImg" alt="inspiration" />
+          <div class="marginTop small">
+            <img class="inspirationImg paddingTop marginBottom small" :src="inspirationImg" alt="inspiration" />
+            <p class="p">
+              Starting off as a random idea for Cruzhacks (a hackathon
+              hosted in Santa Cruz, California), I wanted to design a user-friendly
+              and modern application to entice our targeted college
+              student demographic.
+            </p>
+            <p class="p marginTop">
+              The name of our project derived from a nearby chip bag flavored "salt and vinegar".
+              Sticking with the name jokingly, we worked on the project thinking a new name would come
+              up in the process. However, we concluded our product is a silly idea and this name is uniquely
+              humorous.
+            </p>
           </div>
           <div class="paddingTop paddingBottom"></div>
           <h4 class="h4 marginTop paddingBottom small">
@@ -264,11 +262,6 @@ export default {
   padding-bottom: 100px;
 }
 
-.float {
-  display: flex;
-  align-items: flex-start;
-}
-
 .inspirationImg,
 .list1Img,
 .list2Img,
@@ -324,8 +317,10 @@ export default {
 }
 
 .inspirationImg {
+  float: right;
   margin-top: -60px;
   width: 30%;
+  min-width: 270px;
 }
 
 .list1Img,
@@ -441,6 +436,10 @@ export default {
 
   .text-body {
     width: 100%;
+  }
+
+  .inspirationImg {
+    float: unset;
   }
 }
 

@@ -137,6 +137,13 @@ export default {
         text-transform: uppercase;
     }
 
+    @media (max-width: 880px) {
+        .chevron-left,
+        .chevron-right {
+            display: none;
+        }
+    }
+
     @media (max-width: 400px) {
         .label {
             font-size: 14px;
