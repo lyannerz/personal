@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build && cd dist && rsync -va --delete-after * ../ && cd .. && cp index.html 404.html && rm -rf dist",
+    "deploy": "yarn build && git add -A && git commit -m 'deploy' && git push",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
