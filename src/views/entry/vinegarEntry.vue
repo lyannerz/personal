@@ -9,8 +9,8 @@
           <p class="p paddingTop">
             How students can alleviate the fear of missing vital information during lectures.
           </p>
-          <a class="link hover marginTop" href="https://www.figma.com/file/MjWyfxSPRzoWxUWEcDUIu22e/vinegar" target="_blank">
-            Figma Link
+          <a class="link hover marginTop" href="https://www.joinvinegar.com/" target="_blank">
+            Visit Website
           </a>
         </div>
         <div class="text-body paddingTop large">
