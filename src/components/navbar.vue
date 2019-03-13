@@ -20,6 +20,13 @@
       >
         Portfolio
       </router-link>
+      <a
+        class="marginRight hover hover2"
+        href="/LyannaHo_Resume.pdf"
+        target="_blank"
+      >
+        Resume
+      </a>
       <a class="hover hover2" href="https://www.linkedin.com/in/lyanna-ho/" target="_blank">
         LinkedIn
       </a>
