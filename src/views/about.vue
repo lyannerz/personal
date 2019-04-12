@@ -12,7 +12,6 @@
           </p>
           <div class="marginBottom large" style="display: flex;">
             <a class="hover hover3 marginRight" style="font-size: 18px;" href="mailto:lyannaho0@gmail.com" target="_top">Contact</a>
-            <a class="hover hover3" style="font-size: 18px;" href="/LyannaHo_Resume.pdf" target="_blank">Resume</a>
           </div>
           <div class="grid marginBottom small">
             <img
