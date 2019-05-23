@@ -200,20 +200,18 @@ export default {
   color: #6F82A5;
   cursor: pointer;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 15px 40px;
 }
 
 .link.b {
   background-color: #6F82A5;
   color: var(--white-color);
-  font-weight: 400;
 }
 
 .link.c {
     background-color: #E2E6ED;
     color: #6F82A5;
-    font-weight: 500;
 }
 
 .content {
