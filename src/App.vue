@@ -55,6 +55,27 @@ export default {
   --transition-duration: 0.3s;
 }
 
+@font-face {
+  font-family: "Circular Pro";
+  src: url("assets/fonts/circular-pro-book.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Pro";
+  src: url("assets/fonts/circular-pro-medium.woff");
+  font-weight: 600;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: "Circular Pro";
+  src: url("assets/fonts/circular-pro-bold.woff");
+  font-weight: 800;
+  font-style: bold;
+}
+
 body,
 html,
 #app {
@@ -97,7 +118,7 @@ input:focus {
 }
 
 * {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', 'Open Sans', Helvetica, Arial, sans-serif;
   box-sizing: border-box;
   outline: 0 !important;
   position: relative;

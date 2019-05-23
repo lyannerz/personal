@@ -2,20 +2,44 @@
   <div>
     <div class="content-modal">
       <button class="close hover" v-on:click="onClose">x</button>
-      <a href="https://www.figma.com/file/RLVOfYzJOfvNrjnbpbxlIsMc/Personal?node-id=0%3A1" target="_blank">
-        <img class="wave hover" src="/personal.png" alt="personal figma" />
-      </a>
-    </div>
-    <div class="textAlign paddingBottom">
-      <a class="link hover" href="https://www.figma.com/file/RLVOfYzJOfvNrjnbpbxlIsMc/Personal?node-id=0%3A1" target="_blank">
-        Open in Figma
-      </a>
+      <div class="link-wrapper">
+        <a
+          class="link hover"
+          href="https://dribbble.com/lyannaho"
+          target="_blank"
+          v-html="Dribbble"
+        />
+        <a
+          class="link hover"
+          href="https://www.linkedin.com/in/lyanna-ho/"
+          target="_blank"
+          v-html="LinkedIn"
+        />
+        <a
+          class="link hover"
+          href="https://vsco.co/lyannaho/images"
+          target="_blank"
+          v-html="Vsco"
+        />
+        </div>
     </div>
   </div>
 </template>
 
 <script>
+import Dribbble from '!raw-loader!@/assets/dribbble.svg';
+import LinkedIn from '!raw-loader!@/assets/linkedin.svg';
+import Vsco from '!raw-loader!@/assets/vsco.svg';
+
 export default {
+  data() {
+    return {
+        // assets
+        Dribbble,
+        LinkedIn,
+        Vsco,
+    };
+  },
   props: {
     onClose: Function,
   },
@@ -25,9 +49,9 @@ export default {
 <style scoped>
 .content-modal {
   height: auto;
-  padding: 70px 50px 40px 50px;
+  padding: 70px;
   text-align: center;
-  width: min-content;
+  width: 60vw;
 }
 
 .wave {
@@ -43,7 +67,6 @@ export default {
 }
 
 .close {
-  background-color: var(--light-blue-color);
   color: var(--black-color);
   border-top-right-radius: 10px;
   cursor: pointer;
@@ -63,19 +86,22 @@ export default {
   text-align: center;
 }
 
+.link-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px 0;
+}
+
 .link {
-  border-radius: 50px;
-  background-color: var(--light-blue-color);
-  color: var(--black-color);
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 10px 25px;
 }
 
 @media (max-width: 880px) {
   .content-modal {
-    padding: 60px 40px 40px 40px;
+    padding: 60px;
   }
 
   .wave {
@@ -85,7 +111,8 @@ export default {
 
 @media (max-width: 580px) {
   .content-modal {
-    padding: 20px 0 0 0;
+    padding: 40px;
+    width: 80vw;
   }
 
   .wave {
@@ -99,3 +126,11 @@ export default {
   }
 }
 </style>
+
+<style>
+.link > svg {
+  width: 40px;
+  height: 40px;
+}
+</style>
+

@@ -27,16 +27,22 @@
                 Enter
               </router-link>
             </div>
+            <div class="item">
+              <h4 class="item-header">TutorHub</h4>
+              <router-link
+                class="tutorhub hover hover3"
+                tag="a"
+                to="/portfolio/tutorhub"
+              >
+                Enter
+              </router-link>
+            </div>
           </div>
           <h3 class="header-3 marginTop large">Also,</h3>
           <p class="message marginBottom large">
             check out my fun projects and illustrations!
           </p>
           <div class="grid">
-            <div class="item">
-              <h4 class="item-header">Personal</h4>
-              <a class="hover hover3" href="https://www.figma.com/file/RLVOfYzJOfvNrjnbpbxlIsMc/Personal?node-id=0%3A1" target="_blank">Figma</a>
-            </div>
             <div class="item">
               <h4 class="item-header">Causeway</h4>
               <a class="causeway hover hover3" href="https://www.figma.com/file/0b9MheMHBV8CZcrqwWpCpXlQ/causeway-stuff?node-id=0%3A1" target="_blank">Figma</a>
@@ -118,7 +124,7 @@ export default {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 660px;
+  width: 100%;
 }
 
 .grid.first {
@@ -126,7 +132,7 @@ export default {
 }
 
 .grid.first .item {
-  min-width: 25%;
+  min-width: 50%;
   width: fit-content;
 }
 
@@ -152,6 +158,11 @@ export default {
 .nextdoor::before {
   background-color: #00B246 !important;
   opacity: 0.25;
+}
+
+.tutorhub::before {
+  background-color: #6F82A5 !important;
+  opacity: 0.4;
 }
 
 .vinegar::before {

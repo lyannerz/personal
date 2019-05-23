@@ -12,8 +12,8 @@ const enterAnim = [
 ];
 
 const enterTiming = {
-  delay: 300,
-  duration: 250,
+  delay: 200,
+  duration: 200,
   easing: 'cubic-bezier(0.8, 0, 0.2, 1.5)',
   fill: 'forwards',
 };
@@ -24,7 +24,7 @@ const leaveAnim = [
 ];
 
 const leaveTiming = {
-  duration: 200,
+  duration: 300,
   easing: 'cubic-bezier(0.8, 0, 0.2, 1.5)',
   fill: 'forwards',
 };
@@ -72,5 +72,6 @@ export default {
   position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
+  will-change: opacity, transform;
 }
 </style>
