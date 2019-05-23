@@ -14,7 +14,7 @@
           </a>
         </div>
         <div class="text-body paddingTop large">
-          <iframe class="iframe paddingBottom large" style="border: none; max-width: 100vw;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQgzacPd5z7j5gHscnZSNjonv%2FTutor-Hub%3Fnode-id%3D1%253A2%26viewport%3D57%252C220%252C0.3664567768573761%26scaling%3Dscale-down" allowfullscreen></iframe>
+          <iframe class="iframe marginBottom large" style="border: none; max-width: 100vw;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQgzacPd5z7j5gHscnZSNjonv%2FTutor-Hub%3Fnode-id%3D1%253A2%26viewport%3D57%252C220%252C0.3664567768573761%26scaling%3Dscale-down" allowfullscreen></iframe>
           <h4 class="h4 marginTop paddingBottom small">
             Introduction
           </h4>
