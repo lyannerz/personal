@@ -6,7 +6,7 @@
           <h1 class="h1">
             TutorHub
           </h1>
-          <p class="p paddingTop">
+          <p class="p paddingTop small">
             Creating a convenient solution for college students seeking help.
           </p>
           <a class="link hover marginTop" href="https://github.com/StevenSuh/TutorHub" target="_blank">
@@ -174,7 +174,7 @@ export default {
 
 .h1 {
   font-size: 80px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -284,7 +284,7 @@ export default {
 
 .h4 {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2em;
   text-align: center;
 }
