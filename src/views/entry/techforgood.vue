@@ -4,10 +4,9 @@
       <button class="close hover" v-on:click="onClose">x</button>
       <p class="p">Working with Professor David Lee</p>
       <a class="tech-link hover marginBottom" href="https://www.figma.com/file/0b9MheMHBV8CZcrqwWpCpXlQ/causeway-stuff?node-id=0%3A1" target="_blank">Causeway</a>
-      <img class="smile marginBottom" :src="SmileImg" alt="tech for good" />
-      <div class="in-progress">
-        In Progress
-      </div>
+      <a href="https://tech4good.soe.ucsc.edu" target="_blank">
+        <img class="smile" :src="SmileImg" alt="tech for good" />
+      </a>
     </div>
     <div class="textAlign paddingBottom">
       <a class="link hover marginTop" v-on:click="onClose">
@@ -60,8 +59,7 @@ export default {
 }
 
 .close {
-  background-color: var(--black-color);
-  color: var(--white-color);
+  color: var(--black-color);
   border-top-right-radius: 10px;
   cursor: pointer;
   font-family: 'Nunito', sans-serif;

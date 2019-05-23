@@ -36,7 +36,6 @@ export default {
 }
 
 .close {
-  background-color: #FCEFDB;
   border-top-right-radius: 10px;
   cursor: pointer;
   font-family: 'Nunito', sans-serif;

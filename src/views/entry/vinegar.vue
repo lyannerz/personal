@@ -57,8 +57,7 @@ export default {
 }
 
 .close {
-  background-color: var(--black-color);
-  color: var(--white-color);
+  color: var(--black-color);
   border-top-right-radius: 10px;
   cursor: pointer;
   font-family: 'Nunito', sans-serif;

@@ -58,7 +58,6 @@ export default {
 }
 
 .close {
-  background-color: var(--black-color);
   color: var(--white-color);
   border-top-right-radius: 10px;
   cursor: pointer;

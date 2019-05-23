@@ -14,7 +14,10 @@
           </a>
         </div>
         <div class="text-body paddingTop large">
-          <iframe class="iframe marginBottom large" style="border: none; max-width: 100vw;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQgzacPd5z7j5gHscnZSNjonv%2FTutor-Hub%3Fnode-id%3D1%253A2%26viewport%3D57%252C220%252C0.3664567768573761%26scaling%3Dscale-down" allowfullscreen></iframe>
+          <h4 class="h4 showOnMobile marginTop paddingBottom">
+            Prototype
+          </h4>  
+          <iframe ref="prototype" class="iframe marginBottom large" style="border: none; max-width: 100vw;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQgzacPd5z7j5gHscnZSNjonv%2FTutor-Hub%3Fnode-id%3D1%253A2%26viewport%3D57%252C220%252C0.3664567768573761%26scaling%3Dscale-down" allowfullscreen></iframe>
           <h4 class="h4 marginTop paddingBottom small">
             Introduction
           </h4>
@@ -31,7 +34,7 @@
           <p class="p marginTop small">
             Performing an expert user interview, we were able to gain insights and create objectives for our project. I chose this expert based on their outstanding qualifications, high anonymous ratings, and their knowledge in becoming a tutor for our school.
           </p>
-          <img class="researchImg hideOnMobile paddingTop marginBottom large" :src="researchImg" alt="research" />
+          <img class="researchImg paddingTop marginBottom large" :src="researchImg" alt="research" />
           <p class="p marginTop small">
             A sample of the feelings we learned from our expert user research:
           </p>
@@ -149,6 +152,10 @@ export default {
   },
   mounted() {
     this.track();
+
+    if (window.innerWidth <= 580) {
+        this.$refs.prototype.clientHeight = (window.innerWidth * 0.8) * (667/375);
+    }
   },
 }
 </script>
@@ -308,6 +315,10 @@ export default {
   text-align: center;
 }
 
+.showOnMobile {
+    display: none;
+}
+
 @media (max-width: 880px) {
   .main {
     padding: 65px 80px;
@@ -348,6 +359,10 @@ export default {
 
   .divider > * {
     width: 100%;
+  }
+
+  .showOnMobile {
+    display: block;
   }
 
   .hideOnMobile {
