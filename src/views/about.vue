@@ -24,11 +24,11 @@
             />
           </div>
         </div>
-        <div class="contact-me-wrapper">
+        <!-- <div class="contact-me-wrapper">
           <router-link class="contact-me hover marginBottom large" to="/portfolio">
             Go to Portfolio
           </router-link>
-        </div>
+        </div> -->
       </div>
       <transition name="fadeNoDelay">
         <Modal v-if="isModalOpen" :onClose="closeModal">
