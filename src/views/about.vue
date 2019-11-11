@@ -5,10 +5,10 @@
         <div class="content paddingBottom">
           <h1 class="header marginBottom">About me</h1>
           <p class="message marginBottom large">
-            {{'I am passionate about product design and creating satisfying user experiences. '}}
-            {{'In my free time, I enjoy scrolling through dribbble, playing guitar, doodling, hanging out with '}}
+            {{'I love the process behind product design and enjoy learning about all the small details in creating a satisfying user experience. '}}
+            {{'In my free time, I scroll through Dribbble, doodle, play guitar/video games, and hang out with '}}
             <span class="strikethrough">dogs</span>
-            {{'my friends, playing badminton, and photographing memories.'}}
+            {{'friends.'}}
           </p>
           <div class="marginBottom large" style="display: flex;">
             <a class="hover hover3 marginRight" style="font-size: 18px;" href="mailto:lyannaho0@gmail.com" target="_top">Contact</a>
