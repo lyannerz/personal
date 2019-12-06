@@ -5,8 +5,21 @@
         <div class="content paddingBottom">
           <h1 class="header marginBottom">About me</h1>
           <p class="message marginBottom large">
-            {{'I love the process behind product design and enjoy learning about all the small details in creating a satisfying user experience. '}}
-            {{'In my free time, I scroll through Dribbble, doodle, play guitar/video games, and hang out with '}}
+            {{"Hi! I'm"}}
+            <b>{{'Lyanna'}}</b>
+            {{', currently designing at BirdEye.'}}
+            <br /><br />
+            {{"I'm extremely grateful to be able to learn and tackle creative challenges"}}
+            <br />
+            {{'in my current role.'}}
+            {{'I love the end-to-end process in creating innovative,'}} 
+            <br />
+            {{'simple products and enjoy learning about all the small details which'}}
+            <br />
+            {{'are often overlooked. '}}
+            <br /><br />
+            {{'In my free time, I play the guitar/bass, doodle, game, and hang out with'}}
+            <br />
             <span class="strikethrough">dogs</span>
             {{'friends.'}}
           </p>

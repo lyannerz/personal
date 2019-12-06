@@ -74,7 +74,17 @@ a {
 
 @media (max-width: 580px) {
   a {
-    font-size: 16px;
+    font-size: 15px;
+  }
+
+  .navbar-span > a.marginRight {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  a {
+    font-size: 14px;
   }
 
   .navbar-span > a.marginRight {

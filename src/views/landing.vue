@@ -5,7 +5,7 @@
         <div class="content">
           <h1 class="header marginBottom">Hi! My name is Lyanna.</h1>
           <p class="message marginBottom large">
-            {{'Currently a product design intern at '}}
+            {{'Currently a product designer at '}}
             <a class="special message hover hover3" href="https://www.birdeye.com" target="_blank">
               BirdEye
             </a>
@@ -15,7 +15,7 @@
               Santa Cruz
             </a> -->
             <br />
-            {{'I love designing products and creating illustrations.'}}
+            {{''}}
           </p>
           <div class="grid">
             <a

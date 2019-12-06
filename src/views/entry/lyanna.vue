@@ -17,6 +17,12 @@
         />
         <a
           class="link hover"
+          href="https://www.instagram.com/lyannerz.github.io/"
+          target="_blank"
+          v-html="Instagram"
+        />
+        <a
+          class="link hover"
           href="https://vsco.co/lyannaho/images"
           target="_blank"
           v-html="Vsco"
@@ -29,6 +35,7 @@
 <script>
 import Dribbble from '!raw-loader!@/assets/dribbble.svg';
 import LinkedIn from '!raw-loader!@/assets/linkedin.svg';
+import Instagram from '!raw-loader!@/assets/instagram.svg';
 import Vsco from '!raw-loader!@/assets/vsco.svg';
 
 export default {
@@ -37,6 +44,7 @@ export default {
         // assets
         Dribbble,
         LinkedIn,
+        Instagram,
         Vsco,
     };
   },
