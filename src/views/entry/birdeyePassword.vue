@@ -174,12 +174,17 @@ export default {
 
 @media (max-width: 580px) {
   .content-modal {
-    padding: 20px 0 0 0;
+    padding: 20px 0;
   }
 
   .wave {
     height: 300px;
     width: 300px;
+  }
+
+  .input {
+    width: 80vw;
+    margin: 0 5vw;
   }
 }
 </style>

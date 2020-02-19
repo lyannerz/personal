@@ -64,7 +64,7 @@
           </div>
           <div class="paddingTop paddingBottom"></div>
           <div class="paddingBottom" style="text-align: center;">
-            <router-link class="hover marginTop small" to="/portfolio">
+            <router-link class="link b hover marginTop small" tag="a" to="/portfolio">
               Return to Portfolio
             </router-link>
           </div>
@@ -173,7 +173,7 @@ export default {
 }
 
 .link.b {
-  background-color: #f88379;
+  background-color: #1976d2;
   color: var(--white-color);
   font-weight: 400;
 }
@@ -230,7 +230,7 @@ export default {
 
 .h4 {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2em;
   text-align: center;
 }
