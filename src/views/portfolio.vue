@@ -8,6 +8,15 @@
           </h1>
           <div class="grid first">
             <div class="item">
+              <h4 class="item-header">BirdEye</h4>
+              <button
+                class="birdeye hover hover3"
+                v-on:click="onClickBirdeye"
+              >
+                Enter
+              </button>
+            </div>
+            <div class="item">
               <h4 class="item-header">Vinegar</h4>
               <router-link
                 class="vinegar hover hover3"
@@ -37,41 +46,44 @@
                 Enter
               </router-link>
             </div>
-          </div>
-          <h3 class="header-3 marginTop large">Also,</h3>
-          <p class="message marginBottom large">
-            check out my fun projects and illustrations!
-          </p>
-          <div class="grid">
             <div class="item">
               <h4 class="item-header">Causeway</h4>
               <a class="causeway hover hover3" href="https://www.figma.com/file/0b9MheMHBV8CZcrqwWpCpXlQ/causeway-stuff?node-id=0%3A1" target="_blank">Figma</a>
             </div>
-            <div class="item">
-              <h4 class="item-header">Spotify</h4>
-              <a class="spotify hover hover3" href="https://www.figma.com/file/UJzGtjkjeTrxh12IqGwHeHGC/Spotify?node-id=0%3A1" target="_blank">Figma</a>
-            </div>
-            <div class="item">
-              <h4 class="item-header">LinkedIn</h4>
-              <a class="linkedin hover hover3" href="https://www.figma.com/file/LDesFquzxt2PGyER9LShjVBo/LinkedIn-Job-Search?node-id=0%3A1" target="_blank">Figma</a>
-            </div>
-            <div class="item">
-              <h4 class="item-header">Patatap</h4>
-              <a class="patatap hover hover3" href="/patatap/patatap.html" target="_blank">JavaScript</a>
-            </div>
           </div>
         </div>
       </div>
+      <transition name="fadeNoDelay">
+        <Modal v-if="isModalOpen" :onClose="closeModal">
+          <component
+            :is="currentModal.entry"
+            :isMobile="isMobile"
+            :onClose="closeModal"
+          />
+        </Modal>
+      </transition>
     </div>
   </transition>
 </template>
 
 <script>
+import birdeye from '@/views/entry/birdeyePassword';
+import Modal from '@/components/modal';
+
+import {ALL_ENTRIES} from '@/defs';
+
 export default {
+  components: {
+    birdeye,
+    Modal,
+  },
   data() {
     return {
       // state
       show: false,
+      isModalOpen: false,
+      currentModal: ALL_ENTRIES.find((item) =>
+        item.entry === this.$route.hash.slice(1)),
     };
   },
   mounted() {
@@ -82,6 +94,19 @@ export default {
     track() {
       this.$ga.page('/portfolio');
     },
+    onClickBirdeye() {
+      this.isModalOpen = true;
+      this.currentModal = { entry: 'birdeye' };
+      window.location.hash = 'birdeye';
+    },
+    closeModal: function() {
+      this.isModalOpen = false;
+      this.currentModal = null;
+      history.pushState(null, null, ' ');
+    },
+  },
+  props: {
+    isMobile: Boolean,
   },
 }
 </script>
@@ -146,7 +171,9 @@ export default {
   font-weight: 400;
 }
 
-.item > a {
+.item > a,
+.item > button {
+  cursor: pointer;
   font-size: 16px;
 }
 
@@ -170,19 +197,8 @@ export default {
   opacity: 0.6;
 }
 
-.spotify::before {
-  background-color: #1db954 !important;
-  opacity: 0.35;
-}
-
-.linkedin::before {
-  background-color: #0077B5 !important;
-  opacity: 0.35;
-}
-
-.patatap::before {
-  background-color: #f0db4f !important;
-  opacity: 0.35;
+.birdeye::before {
+  background-color: var(--light-blue-color) !important;
 }
 
 @media (max-width: 880px) {

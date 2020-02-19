@@ -8,6 +8,7 @@ import portfolio from '@/views/portfolio';
 import kleinerPerkins from '@/views/entry/kleinerPerkins';
 import tutorHub from '@/views/entry/tutorHub';
 import vinegarEntry from '@/views/entry/vinegarEntry';
+import birdeyeEntry from '@/views/entry/birdeyeEntry';
 
 Vue.use(Router);
 export default new Router({
@@ -32,6 +33,11 @@ export default new Router({
     {
       path: '/portfolio/vinegar',
       component: vinegarEntry,
+    },
+    {
+      path: '/portfolio/birdeye',
+      component: birdeyeEntry,
+      props: route => ({ password: route.query.password }),
     },
     {
       path: '/about',

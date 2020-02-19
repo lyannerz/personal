@@ -50,6 +50,8 @@ export default {
   --light-blue-color: #DDE6F5;
   --black-color: #474747;
   --white-color: #ffffff;
+  --gray-color: #cbd0d6;
+  --red-color: #f88379;
 
   --transition-curve: cubic-bezier(0.8, 0, 0.2, 1);
   --transition-duration: 0.15s;

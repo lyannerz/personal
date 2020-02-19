@@ -43,10 +43,8 @@
 </template>
 
 <script>
-import corgi from '@/views/entry/corgi';
+import birdeye from '@/views/entry/birdeyePassword';
 import lyanna from '@/views/entry/lyanna';
-import santacruz from '@/views/entry/santacruz';
-import techforgood from '@/views/entry/techforgood';
 import vinegar from '@/views/entry/vinegar';
 
 import Modal from '@/components/modal';
@@ -55,10 +53,8 @@ import {ALL_ENTRIES, PORTFOLIO_ENTRIES, SPECIAL_ENTRIES} from '@/defs';
 
 export default {
   components: {
-    corgi,
+    birdeye,
     lyanna,
-    santacruz,
-    techforgood,
     vinegar,
     Modal,
   },
@@ -168,6 +164,15 @@ export default {
   margin: auto;
   top: 5%;
   width: 90%;
+}
+
+.item-img.birdeye {
+  height: 85%;
+  left: 7.5%;
+  margin: auto;
+  top: 7.5%;
+  width: 85%;
+  opacity: 0.8;
 }
 
 @media (max-width: 880px) {

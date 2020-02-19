@@ -1,17 +1,15 @@
 import BaldieImg from '@/assets/baldie.png';
-import CorgiImg from '@/assets/corgi.png';
 import DoodleImg from '@/assets/doodle.png';
 import GieImg from '@/assets/gie.png';
 import LyannaImg from '@/assets/lyanna.png';
-import SmileImg from '@/assets/smile.png';
 import VinegarImg from '@/assets/vinegar.png';
+import BirdeyeImg from '@/assets/birdeye.svg';
 
 // MODIFY HERE FOR PORTFOLIO ENTRIES
 export const PORTFOLIO_ENTRIES = [
-  { imgSrc: CorgiImg, class: 'corgi', entry: 'corgi' },
-  { imgSrc: SmileImg, class: 'smile', entry: 'techforgood' },
-  { imgSrc: VinegarImg, class: 'vinegar', entry: 'vinegar' },
+  { imgSrc: BirdeyeImg, class: 'birdeye', entry: 'birdeye' },
   { imgSrc: LyannaImg, class: 'lyanna', entry: 'lyanna' },
+  { imgSrc: VinegarImg, class: 'vinegar', entry: 'vinegar' },
 ];
 
 export const SPECIAL_ENTRIES = {
@@ -29,3 +27,5 @@ export const ABOUT_IMGS = [
   { imgSrc: BaldieImg, class: 'baldie', entry: 'baldie' },
   { imgSrc: DoodleImg, class: 'doodle', entry: 'doodle' },
 ];
+
+export const BIRDEYE_PASSWORD = 'YmlyZGV5ZQ==';
