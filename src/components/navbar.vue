@@ -22,7 +22,7 @@
       </router-link>
       <a
         class="marginRight hover hover2"
-        href="/Resume.pdf"
+        href="https://drive.google.com/file/d/1fXbtUQmvg6ZsvONICSztkBVHFiS-FHDi/view"
         target="_blank"
       >
         Resume
