@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bg-overlay" v-on:click="onClose"></div>
-    <div class="content" ref="content"><slot></slot></div>
+    <div class="content" ref="content" :class="[contentClass]"><slot></slot></div>
   </div>
 </template>
 
@@ -38,6 +38,7 @@ export default {
   },
   props: {
     onClose: Function,
+    contentClass: String,
   },
   beforeDestroy() {
     this.$refs.content.animate(leaveAnim, leaveTiming);
@@ -61,6 +62,7 @@ export default {
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 1000;
 }
 
 .content {
@@ -73,5 +75,9 @@ export default {
   top: 50%;
   transform: translate(-50%, -50%);
   will-change: opacity, transform;
+  max-height: 90vh;
+  max-width: 90vw;
+  overflow: auto;
+  z-index: 1000;
 }
 </style>
